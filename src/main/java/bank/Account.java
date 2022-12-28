@@ -46,6 +46,7 @@ public class Account {
 
     double newBalance = balance + amount;
     this.balance = newBalance;
+    DataSource.updateAccountBalance(id, newBalance);
   }
 
   public void withdraw(double amount) {}
